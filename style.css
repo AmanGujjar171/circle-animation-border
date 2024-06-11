@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.circle1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid rgb(124, 124, 248);
+    border-top: 3px solid blue;
+    animation: ani 3s ease infinite;
+}
+
+.circle2 {
+  
+    width: 150px;
+    height: 150px;
+    border: 3px solid rgb(180, 180, 149);
+    border-top: 3px solid yellow;
+    border-radius: 50%;
+    animation: ani 2s ease infinite;
+
+}
+
+@keyframes ani {
+    0% {
+        transform: translateX(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+
+    }
+}
